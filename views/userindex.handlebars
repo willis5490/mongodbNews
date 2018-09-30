@@ -1,0 +1,51 @@
+<div class="uk-container-large ">
+    <div class="uk-animation-slide-right">
+        <h1 class="centerMe uk-overlay uk-overlay-default">Your Saved Articles</h1>
+    </div>
+    <div class="uk-animation-slide-left">
+        <h5 class="uk-overlay uk-overlay-default">Record the news you care about!</h5>
+    </div>
+</div>
+
+<div class="uk-container">
+    <div class="uk-grid">
+        {{#each articleData}}
+        <div class="uk-width-2-3">
+            <div class="uk-card uk-card-secondary uk-card-body noteCard">
+                <h3 class="uk-card-title carder">{{this.title}}</h3>
+                <a class="mediaMix carder" href="{{this.link}}">Read Full Story</a>
+                <div class="mediaMix" id="buttons" class="uk-position-right">
+                    <br>
+                    <h6 class="carder">Click on image to delete article</h6>
+                    <a href="/notes1/{{this._id}}"><button class="uk-button uk-button-primary butts carder" uk-toggle="target: #modal-example">Make Note</button></a>
+                    <a href="/notes/{{this._id}}"><button class="uk-button uk-button-primary getNotes carder">Get Notes</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="uk-width-1-3">
+            {{!-- delete article from saved  --}}
+            <a href="/delete/{{this._id}}"><img class="artPic" src="{{this.pic}}" alt="{{this._id}}"></a>
+        </div>
+     <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Article Notes</h2>
+                <form>
+                    <fieldset class="uk-fieldset">
+
+                        <div class="uk-margin">
+                            <textarea id="uk-textarea"  class="uk-textarea userNotes" rows="5" placeholder="Your Notes..."></textarea>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <a href="/notes1/{{this._id}}"><button class="uk-button uk-button-primary modalInfo uk-modal-close" type="button">Save</button></a>
+                </p>
+            </div>
+        </div>
+        {{/each}}
+           
+    </div>
+</div>

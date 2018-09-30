@@ -1,0 +1,107 @@
+.uk-navbar{
+    background-color:white; 
+    font-family: 'Merienda', cursive;
+    padding: 10px;
+    border-bottom: solid;
+    border-bottom-color: black;
+    
+}
+#header{
+    font-family: 'Merienda', cursive;
+    margin-left: 50px;
+}
+.uk-navbar-right{
+    margin-right: 50px;
+}
+.uk-search-input {
+    color: black;
+}
+.articleContainer{
+    background: rgb(152, 120, 105);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.navicons{
+    padding-left: 20px;
+}
+.uk-container-large{
+    width: 100%;
+    height: 500px;
+    background: url('./articleImage.jpg');
+    background-size: cover;
+}
+.centerMe{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Merienda', cursive;
+}
+h5{
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
+.butts{
+    margin-left: 10px;
+}
+.uk-grid{
+margin-top: 30px;
+}
+#articlePic{
+    height: 100%;
+}
+.uk-card{
+    text-align: center;
+
+}
+.uk-width-2-3{
+    margin-bottom: 30px;
+}
+.uk-width-1-3{
+    margin-bottom: 30px;
+}
+.artPic{
+    width: 100%;
+    height: 100%;
+}
+.uk-width-4-4{
+    margin-bottom: 30px;
+}
+.uk-container{
+    font-family: 'Merienda', cursive;
+}
+a {
+    font-family: 'Merienda', cursive;
+}
+h2{
+    font-family: 'Merienda', cursive;
+}
+h3{
+    font-family: 'Merienda', cursive;
+}
+h6{
+    font-family: 'Merienda', cursive;
+}
+
+
+/* media query */
+@media only screen and (max-width: 480px) {
+    .uk-navbar-right{
+        margin-right: 5px;
+    }
+    #header{
+        margin-left: 5px;
+    }
+    .uk-card{
+        width: 100%;
+    }
+    .uk-card-title{
+        width: 100%;
+    }
+    .mediaMix{
+        width: 100%;
+    }
+    .butts{
+        width: 100%;
+    }
+}

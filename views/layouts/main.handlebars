@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Daily Dose</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Merienda" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+      <!-- Nav bar and body load partial handlebars -->
+      {{> nav/navbar}}
+    </header>
+
+
+    <main class="uk-container">
+      <!-- Load Main HTML here -->
+      {{{ body }}}
+    </main>
+
+    <section>
+      {{articles}}
+    </section>
+
+    
+
+    <footer class="uk-section uk-section-small" style="margin-bottom: 60px">
+		
+		</footer>
+
+         {{!--  JQuery  --}}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit-icons.min.js"></script>
+    <!-- Initialize JS -->
+    <script src="../init.js"></script>
+    <script src="../main.js"></script>
+    
+</body>
+</html>

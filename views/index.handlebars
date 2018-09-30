@@ -1,0 +1,30 @@
+<div class="uk-container-large ">
+    <div class="uk-animation-slide-right">
+        <h1 class="centerMe uk-overlay uk-overlay-default">The Daily Dose</h1>
+    </div>
+    <div class="uk-animation-slide-left">
+        <h5 class="uk-overlay uk-overlay-default">The CNN Edition</h5>
+    </div>
+</div>
+
+<div class="uk-container">
+    <div class="uk-grid">
+        {{#each articleData}}
+        <div class="uk-width-2-3">
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">{{this.title}}</h3>
+                <a class="mediaMix" href="{{this.link}}">Read Full Story</a>
+                <div class="mediaMix" id="buttons" class="uk-position-right">
+                    <br>
+
+                    <h6>Click on image to save article</h6>
+                </div>
+                
+            </div>
+        </div>
+        <div class="uk-width-1-3">
+          <a href="/userArticles/{{this.id}}"><img class="artPic" src="{{this.pic}}" alt="{{this._id}}"></a>
+        </div>
+        {{/each}}
+    </div>
+</div>
