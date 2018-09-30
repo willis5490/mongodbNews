@@ -1,7 +1,7 @@
 
 module.exports = {
-    Article: require("../models/Articles"),
-    Note: require("../models/Notes"),
-    UserArticle: require('../models/UserArticle')
+    Article: require("./Articles"),
+    Note: require("./Notes"),
+    UserArticle: require('./UserArticle')
   };
   

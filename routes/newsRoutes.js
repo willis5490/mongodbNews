@@ -8,7 +8,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsArticles
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
-var db = require("../models");
+var db = require("../models/Index");
 
 router.get('/', (req, res) => {
   res.render('index')
