@@ -2,7 +2,7 @@
 $('.modalInfo').on("click",()=> {
   const notes = $('.userNotes').val().trim();
   console.log(notes)
-  const id = $('.artPic').attr('alt');
+  const id = $('.modalInfo').attr('type');
   console.log(id)
  
   $.ajax({

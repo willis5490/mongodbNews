@@ -94,14 +94,42 @@ h6{
     }
     .uk-card{
         width: 100%;
+        overflow: auto;
+        text-align: center;
+        font-size: 80%
     }
     .uk-card-title{
-        width: 100%;
+        font-size: 90%
     }
     .mediaMix{
         width: 100%;
     }
     .butts{
+        font-size: 60%;
+     
+    }
+    .getNotes{
+        font-size: 60%;
+        margin-left: 10px;
+        
+    }
+    .uk-button-default{
         width: 100%;
+        text-align: center;
+        
+    }
+    .uk-button-primary{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .uk-card-primary.uk-card-body, .uk-card-primary{
+        width: 100%
+    }
+    .artPic{
+        height: 50%
+    }
+    h6{
+        font-size: 80%
     }
 }

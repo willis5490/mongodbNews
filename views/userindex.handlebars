@@ -17,8 +17,8 @@
                 <div class="mediaMix" id="buttons" class="uk-position-right">
                     <br>
                     <h6 class="carder">Click on image to delete article</h6>
-                    <a href="/notes1/{{this._id}}"><button class="uk-button uk-button-primary butts carder" uk-toggle="target: #modal-example">Make Note</button></a>
-                    <a href="/notes/{{this._id}}"><button class="uk-button uk-button-primary getNotes carder">Get Notes</button></a>
+                    <a><button class="uk-button uk-button-default butts carder" uk-toggle="target: .modalWork">Make Notes</button></a>
+                    <a href="/notes/{{this._id}}"><button class="uk-button uk-button-default getNotes carder">Get Notes</button></a>
                 </div>
             </div>
 
@@ -27,7 +27,8 @@
             {{!-- delete article from saved  --}}
             <a href="/delete/{{this._id}}"><img class="artPic" src="{{this.pic}}" alt="{{this._id}}"></a>
         </div>
-     <div id="modal-example" uk-modal>
+        
+     <div class="modalWork" uk-modal>
             <div class="uk-modal-dialog uk-modal-body">
                 <h2 class="uk-modal-title">Article Notes</h2>
                 <form>
@@ -38,11 +39,12 @@
                         </div>
 
                     </fieldset>
-                </form>
+               
                 <p class="uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                    <a href="/notes1/{{this._id}}"><button class="uk-button uk-button-primary modalInfo uk-modal-close" type="button">Save</button></a>
+                    <a href="/notes1/{{this._id}}"><button class="uk-button uk-button-primary modalInfo uk-modal-close" type="{{this._id}}">Save</button></a>
                 </p>
+                 </form>
             </div>
         </div>
         {{/each}}
